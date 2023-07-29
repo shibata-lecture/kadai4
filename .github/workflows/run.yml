@@ -4,6 +4,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: bash test_main.sh
       - run: echo "run completed"
 
